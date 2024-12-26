@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 // Capture the form and resume display elements
+
 const resumeForm = document.getElementById("resume-form") as HTMLFormElement;
 const generatedResume = document.getElementById("generated-resume") as HTMLElement;
 
@@ -108,27 +108,3 @@ const generateResume = (event: Event) => {
 
 // Attach the form submit event listener
 resumeForm.addEventListener("submit", generateResume);
-=======
-// Select the toggle buttons and corresponding sections
-const toggleSkillsButton = document.getElementById("toggle-skills") as HTMLButtonElement;
-
-
-const skillsSection = document.querySelector(".skills") as HTMLElement;
-
-
-// Function to toggle visibility of the Skills section
-const toggleSkillsVisibility = () => {
-    if (skillsSection.style.display === "none") {
-        skillsSection.style.display = "block";
-        toggleSkillsButton.textContent = "Hide Skills Section";
-    } else {
-        skillsSection.style.display = "none";
-        toggleSkillsButton.textContent = "Show Skills Section";
-    }
-};
-
-
-// Attach the event listeners to the toggle buttons
-toggleSkillsButton.addEventListener("click", toggleSkillsVisibility);
-
->>>>>>> b40788a29ffe7c0d79edc2ba5be20acdac2e7f5e
