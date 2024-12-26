@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Capture the form and resume display elements
 var resumeForm = document.getElementById("resume-form");
 var generatedResume = document.getElementById("generated-resume");
@@ -66,3 +67,21 @@ var generateResume = function (event) {
 };
 // Attach the form submit event listener
 resumeForm.addEventListener("submit", generateResume);
+=======
+// Select the toggle buttons and corresponding sections
+var toggleSkillsButton = document.getElementById("toggle-skills");
+var skillsSection = document.querySelector(".skills");
+// Function to toggle visibility of the Skills section
+var toggleSkillsVisibility = function () {
+    if (skillsSection.style.display === "none") {
+        skillsSection.style.display = "block";
+        toggleSkillsButton.textContent = "Hide Skills Section";
+    }
+    else {
+        skillsSection.style.display = "none";
+        toggleSkillsButton.textContent = "Show Skills Section";
+    }
+};
+// Attach the event listeners to the toggle buttons
+toggleSkillsButton.addEventListener("click", toggleSkillsVisibility);
+>>>>>>> b40788a29ffe7c0d79edc2ba5be20acdac2e7f5e
